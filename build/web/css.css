@@ -1,0 +1,333 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2021, 6:23:59 PM
+    Author     : rshiroya
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo img {
+    width: 350px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: black;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .homepageImg{
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    
+    .homepageImg img{
+        max-width: 100%;
+        padding: 50px 0;
+    }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgtext{
+    font-size: 30px;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    background: #ffe57c;
+    color: black;
+    padding:8px 15px;
+    margin: 30px 0;
+    border-radius: 28px;
+    font-size: 25px;
+}
+center{
+    background: #ffe57c;
+    
+}
+#cen{
+    display: inline-block;
+    background: #feca1d;
+    color: black;
+    padding:8px 15px;
+    margin: 30px 0;
+    border-radius: 28px;
+    font-size: 25px;
+}
+.header{
+    background: radial-gradient(#ffe57c,#ffe57c)
+}
+.footer{
+    background: radial-gradient(#ffe57c,#ffe57c);
+    font-size: 14px;
+    padding: 60px 0 20px;
+        
+}
+
+.footer p{
+    color: black;
+}
+.footer-col{
+    min-width: 250px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.footer-col{
+    flex: 1;
+    text-align: center;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.col-4 img{
+    width: 100%;
+    
+}
+.prod{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+        
+}
+.contact-form {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  
+}
+input[type=submit] {
+  background-color: #feca1d;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], [type=password], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.about{
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffe57c;
+    
+   
+}
+.quote{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.about-text{
+    
+    font-size: 20px;
+    font-family: Arial;
+}
+
+label{
+    font-family: Arial;
+    
+}
+
+.sign-in, .register, .subscribe, .contact{
+ 
+    margin: auto;
+    
+    width: 25%;
+    padding: 10px;
+    border: 5px solid #feca1d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #feca1d;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffe57c;
+  margin: 5% auto 15% auto; /* 10% from the top, 15% from the bottom and centered */
+  border: 1px solid #feca1d;
+  width: 35%; /* Could be more or less, depending on screen size */
+  border: 5px solid #feca1d;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #feca1d;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.info{
+    text-align: center;
+}
